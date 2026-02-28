@@ -11,14 +11,24 @@
 </head>
 <body>
 
+<script>
+  // 如果没有登录，则跳转登录页
+  if(!localStorage.getItem("member")){
+    window.location.href = "login.html";
+  }
+</script>
+
 <div class="box">
   <h2>🎥 第一课：女性自我觉醒</h2>
+
   <video controls>
     <source src="lesson1.mp4" type="video/mp4">
     你的浏览器不支持视频播放
   </video>
+
   <p style="margin-top:20px;">请在安静的环境中观看本课程，给自己完整的陪伴时间。</p>
 </div>
 
 </body>
 </html>
+

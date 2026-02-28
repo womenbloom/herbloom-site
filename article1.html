@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的成长空间 - 自我成长文章</title>
+  <style>
+    body { font-family: sans-serif; background: #fff7fb; padding: 20px; margin: 0; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); line-height: 1.8; }
+    h1 { color: #d36fa6; text-align: center; }
+    p { margin-bottom: 15px; }
+    @media (max-width: 600px){
+      .container { padding: 20px; }
+      h1 { font-size: 6vw; }
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  // 未登录拦截
+  if(!localStorage.getItem("member")){ window.location.href="login.html"; }
+</script>
+
+<div class="container">
+  <h1>自我成长 - 文字学习</h1>
+  <p>欢迎来到“自我成长”课程的文字学习区，这里记录了本课的核心内容和练习方法。</p>
+  <p>第一步：静下心，回顾最近一周的情绪变化，并记录下来。</p>
+  <p>第二步：列出希望提升的三个方面，并写下行动计划。</p>
+  <p>第三步：每天花 5-10 分钟回顾这些行动计划，保持自我觉察。</p>
+  <p>学习是送给自己的礼物，不需要完美，只要真实。</p>
+</div>
+
+</body>
+</html>

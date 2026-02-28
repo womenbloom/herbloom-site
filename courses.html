@@ -2,23 +2,47 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>课程中心 - HerBloom</title>
   <style>
     body { font-family: sans-serif; background: #fff7fb; margin: 0; }
-    h1 { text-align: center; padding: 40px; color: #b45fa0; }
-    .courses { max-width: 900px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; padding: 20px; }
-    .course { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
-    .course h3 { color: #d36fa6; }
-    .course a { display: inline-block; margin-top: 15px; color: white; background: #d36fa6; padding: 8px 18px; border-radius: 20px; text-decoration: none; }
+    h1 { text-align: center; padding: 40px; color: #b45fa0; font-size: 6vw; }
+    .courses {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+    .course {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .course h3 { color: #d36fa6; font-size: 5vw; }
+    .course a {
+      display: inline-block;
+      margin-top: 15px;
+      color: white;
+      background: #d36fa6;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 4vw;
+    }
+
+    @media (max-width: 600px) {
+      .courses { gap: 15px; padding: 15px; }
+      .course { padding: 15px; }
+    }
   </style>
 </head>
 <body>
 
 <script>
-  // 如果没有登录，则跳转登录页
-  if(!localStorage.getItem("member")){
-    window.location.href = "login.html";
-  }
+  if(!localStorage.getItem("member")){ window.location.href="login.html"; }
 </script>
 
 <h1>🌷 女性精选课程</h1>
@@ -45,4 +69,3 @@
 
 </body>
 </html>
-

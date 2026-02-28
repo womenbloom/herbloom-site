@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HerBloom 女性学习空间</title>
   <style>
     body {
@@ -16,8 +17,12 @@
       text-align: center;
       color: white;
     }
-    h1 {
-      font-size: 42px;
+    header h1 {
+      font-size: 6vw; /* 自适应字体 */
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 4vw;
     }
     .btn {
       display: inline-block;
@@ -28,6 +33,27 @@
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 4vw;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 600px) {
+      header { padding: 40px 15px; }
+      .card { padding: 20px; }
+      .btn { padding: 10px 20px; }
     }
   </style>
 </head>
@@ -38,6 +64,16 @@
   <p>为女性而生的成长与学习平台</p>
   <a href="courses.html" class="btn">进入课程</a>
 </header>
+
+<section>
+  <div class="card">
+    <h2>🌸 我们相信</h2>
+    <p>
+      学习不是为了迎合世界，<br>
+      而是为了成为更自由、更自信的自己。
+    </p>
+  </div>
+</section>
 
 </body>
 </html>

@@ -14,6 +14,13 @@
 </head>
 <body>
 
+<script>
+  // 如果没有登录，则跳转登录页
+  if(!localStorage.getItem("member")){
+    window.location.href = "login.html";
+  }
+</script>
+
 <h1>🌷 女性精选课程</h1>
 
 <div class="courses">
@@ -38,3 +45,4 @@
 
 </body>
 </html>
+
